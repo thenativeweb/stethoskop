@@ -1,0 +1,35 @@
+{
+  "name": "stethoskop",
+  "version": "0.0.0",
+  "description": "stethoskop measures application fitness.",
+  "contributors": [
+    {
+      "name": "Golo Roden",
+      "email": "golo.roden@thenativeweb.io"
+    },
+    {
+      "name": "Matthias Wagler",
+      "email": "matthias.wagler@thenativeweb.io"
+    }
+  ],
+  "main": "lib/Stethoskop.js",
+  "dependencies": {
+    "node-statsd": "0.1.1"
+  },
+  "devDependencies": {
+    "assertthat": "0.6.0",
+    "grunt": "0.4.5",
+    "tourism": "0.16.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thenativeweb/stethoskop.git"
+  },
+  "keywords": [
+    "fitness",
+    "health",
+    "monitoring",
+    "statsd"
+  ],
+  "license": "MIT"
+}
