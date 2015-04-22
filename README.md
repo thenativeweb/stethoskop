@@ -8,7 +8,34 @@ stethoskop measures application fitness.
 
 ## Quick Start
 
-...
+First you need to add a reference to this module.
+
+```javascript
+var Stethoskop = require('stethoskop');
+```
+
+Then, create an instance by calling the constructor and providing the connection to a [StatsD](https://github.com/etsy/statsd) server. Apart from that, provide some information on your application.
+
+```javascript
+var stethoskop = new Stethoskop({
+  from: {
+    application: 'myapp',
+    component: 'foobar'
+  },
+  to: {
+    host: 'localhost',
+    port: 8125
+  }
+});
+```
+
+Now you can note values by calling the `noteValue` function with a key and a value.
+
+```javascript
+stethoskop.noteValue('foo', 23);
+```
+
+Apart from that, cpu and memory usage are being watched and noted automatically once per minute.
 
 ## Running the build
 
