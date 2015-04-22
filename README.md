@@ -25,15 +25,22 @@ var stethoskop = new Stethoskop({
   to: {
     host: 'localhost',
     port: 8125
-  }
+  },
+  enabled: true
 });
 ```
+
+If you set the `enabled` property to `false`, the module won't do anything. You may want to control this option using an environment variable to dynamically enable or disable profiling.
+
+### Taking notes
 
 Now you can note values by calling the `noteValue` function with a key and a value.
 
 ```javascript
 stethoskop.noteValue('foo', 23);
 ```
+
+### Watching the system
 
 Apart from that, cpu and memory usage are being watched and noted automatically once per minute.
 
