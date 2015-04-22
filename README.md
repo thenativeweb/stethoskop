@@ -4,7 +4,7 @@ stethoskop measures application fitness.
 
 ## Installation
 
-    $ npm install thenativeweb/stethoskop
+    $ npm install stethoskop
 
 ## Quick Start
 
