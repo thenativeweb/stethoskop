@@ -14,13 +14,12 @@ First you need to add a reference to this module.
 var Stethoskop = require('stethoskop');
 ```
 
-Then, create an instance by calling the constructor and providing the connection to a [StatsD](https://github.com/etsy/statsd) server. Apart from that, provide some information on your application.
+Then, create an instance by calling the constructor and providing the connection to a [StatsD](https://github.com/etsy/statsd) server. Apart from that, you need to provide the name of your application.
 
 ```javascript
 var stethoskop = new Stethoskop({
   from: {
-    application: 'myapp',
-    component: 'foobar'
+    application: 'myapp'
   },
   to: {
     host: 'localhost',
