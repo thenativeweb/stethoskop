@@ -2,7 +2,7 @@
 
 const assert = require('assertthat');
 
-const Stethoskop = require('../lib/Stethoskop.js');
+const Stethoskop = require('../../lib/Stethoskop.js');
 
 suite('Stethoskop', () => {
   test('is a function.', done => {

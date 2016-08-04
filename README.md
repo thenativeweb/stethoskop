@@ -4,20 +4,22 @@ stethoskop measures application fitness.
 
 ## Installation
 
-    $ npm install stethoskop
+```bash
+$ npm install stethoskop
+```
 
 ## Quick Start
 
 First you need to add a reference to this module.
 
 ```javascript
-var Stethoskop = require('stethoskop');
+const Stethoskop = require('stethoskop');
 ```
 
 Then, create an instance by calling the constructor and providing the connection to a [StatsD](https://github.com/etsy/statsd) server. Apart from that, you need to provide the name of your application.
 
 ```javascript
-var stethoskop = new Stethoskop({
+const stethoskop = new Stethoskop({
   from: {
     application: 'myapp'
   },
@@ -45,14 +47,16 @@ Apart from that, cpu and memory usage are being watched and noted automatically 
 
 ## Running the build
 
-This module can be built using [Grunt](http://gruntjs.com/). Besides running the tests, this also analyses the code. To run Grunt, go to the folder where you have installed stethoskop and run `grunt`. You need to have [grunt-cli](https://github.com/gruntjs/grunt-cli) installed.
+To build this module use [roboter](https://www.npmjs.com/package/roboter).
 
-    $ grunt
+```bash
+$ bot
+```
 
 ## License
 
 The MIT License (MIT)
-Copyright (c) 2015 the native web.
+Copyright (c) 2015-2016 the native web.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
